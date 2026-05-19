@@ -7,9 +7,11 @@ public class Test {
 		
 		
 		UserService service=new UserService();
+		
 		service.loginOtp=new LoginWithOtp();
 		service.loginPwd=new LoginWithPassword();
 		
+		service.doLogin("OTP");
 		service.doLogin("PWD");
 		
 	}
