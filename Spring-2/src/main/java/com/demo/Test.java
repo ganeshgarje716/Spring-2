@@ -20,7 +20,11 @@ public class Test {
 		
 		ApplicationContext context=new ClassPathXmlApplicationContext("NewFile.xml");
 		
+		UserService service = context.getBean(UserService.class);
+		
+		service.doLogin("OTP");
+		
 	}
 	
-}
+} 
  

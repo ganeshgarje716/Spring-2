@@ -14,6 +14,12 @@ public class UserService {
 	LoginWithPassword loginPwd;
 	
 	
+	UserService(LoginWithOtp loginOtp){
+		
+		this.loginOtp=loginOtp;
+	}
+	
+	
 	public void doLogin(String type) {
 		
 		if (type.equals("OTP")) {

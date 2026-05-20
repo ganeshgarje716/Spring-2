@@ -4,10 +4,14 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-  <bean class="com.demo.UserService"></bean>
+  <bean id="userservice" class="com.demo.UserService">
   
-  <bean class="com.demo.LoginWithOtp"></bean>
+  <constructor-arg ref="loginotp"></constructor-arg>
   
-  <bean class="com.demo.LoginWithPassword"></bean>
+  </bean>
+  
+  <bean id="loginotp" class="com.demo.LoginWithOtp"></bean>
+  
+  <bean id="loginpwd" class="com.demo.LoginWithPassword"></bean>
 
 </beans>
