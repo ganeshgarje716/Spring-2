@@ -3,40 +3,48 @@
 public class UserService {
 	
 	
-	public UserService() {
+	
+//	LoginWithOtp loginOtp;
+//	
+//	LoginWithPassword loginPwd;
+	
+	
+	ILogin login;
+	
+	
+	public void setWay(ILogin login) {
 		
-		System.out.println("User Service Constructor Called");
+		this.login=login;
 	}
 	
 	
-	LoginWithOtp loginOtp;
-	
-	LoginWithPassword loginPwd;
-	
-	
-	UserService(LoginWithOtp loginOtp){
-		
-		this.loginOtp=loginOtp;
-	}
+//	UserService(LoginWithOtp loginOtp){
+//		
+//		this.login=loginOtp;
+//	}
 	
 	
-	public void doLogin(String type) {
+//	public void doLogin(String type) {
+//		
+//		if (type.equals("OTP")) {
+//			
+//			login.processLogin(1212);
+//			
+//			System.out.println("Login Success using OTP");
+//		}
+//		
+//		if (type.equals("PWD")) {
+//			
+//			login.processLogin(202020);
+//			
+//			System.out.println("Login Success using Password");
+//		}
+	
+	
+    public void doLogin() {
 		
-		if (type.equals("OTP")) {
-			
-			loginOtp.processLogin(1212);
-			
-			System.out.println("Login Success using OTP");
-		}
-		
-		if (type.equals("PWD")) {
-			
-			loginPwd.processLogin(202020);
-			
-			System.out.println("Login Success using Password");
-		}
-		
-		
+		login.processLogin(232323);
+		System.out.println("Login Success");
 		
 	}
 

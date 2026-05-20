@@ -1,6 +1,6 @@
 package com.demo;
 
-public class LoginWithOtp {
+public class LoginWithOtp implements ILogin{
 	
 	
 	public LoginWithOtp() {

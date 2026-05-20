@@ -6,7 +6,10 @@
 
   <bean id="userservice" class="com.demo.UserService">
   
-  <constructor-arg ref="loginotp"></constructor-arg>
+  <!-- <constructor-arg ref="loginotp"></constructor-arg> -->
+  
+  <property name="Way" ref="loginotp"></property>
+  
   
   </bean>
   

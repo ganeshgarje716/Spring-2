@@ -1,6 +1,6 @@
 package com.demo;
 
-public class LoginWithPassword {
+public class LoginWithPassword implements ILogin{
 	
 	
 	public LoginWithPassword() {

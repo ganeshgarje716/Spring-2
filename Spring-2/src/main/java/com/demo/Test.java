@@ -22,7 +22,7 @@ public class Test {
 		
 		UserService service = context.getBean(UserService.class);
 		
-		service.doLogin("OTP");
+		service.doLogin();
 		
 	}
 	
